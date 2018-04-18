@@ -3,7 +3,7 @@
     <div class="fullpage-wp" v-fullpage="opts" ref="example">
       <div class="page-1 page">
         <section>
-          <!-- <v-parallax src="./static/logo.png"> -->
+          <!-- <v-parallax src="./static/image/beautiful-bloom-blooming.jpg"> -->
           <v-layout column align-center justify-center>
             <p class="part-1"></p>
             <h1 class="brand-heading" v-animate="{value: 'bounceInLeft'}">안녕하세요</h1>
@@ -84,7 +84,7 @@ export default {
   data () {
     return {
       opts: {
-        start: 3,
+        start: 0,
         dir: 'v',
         duration: 100,
         beforeChange: function (prev, next) {
@@ -138,5 +138,16 @@ export default {
 	left: 0;
 	right: 0;
   margin: auto;
+}
+div.page-1 {
+  background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url("/static/image/beautiful-bloom-blooming.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+div.page-2 {
+  background-color: #D2E5E3
+}
+div.page-4 {
+  background-color: #F1CDC1
 }
 </style>
