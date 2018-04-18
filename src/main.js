@@ -6,8 +6,12 @@ import App from './App'
 import router from './router'
 import 'vuetify/dist/vuetify.min.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
+import 'animate.css'
+import 'fullpage-vue/src/fullpage.css'
+import VueFullpage from 'fullpage-vue'
 
 Vue.use(Vuetify)
+Vue.use(VueFullpage)
 
 Vue.config.productionTip = false
 
