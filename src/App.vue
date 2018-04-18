@@ -39,7 +39,9 @@ export default {
     return {
       items: [
         { title: 'Home', icon: 'dashboard', href: 'main' },
-        { title: 'About', icon: 'question_answer', href: 'navi' }
+        { title: 'About', icon: 'description', href: 'about' },
+        { title: 'Photo', icon: 'linked_camera', href: 'photo' },
+        { title: 'Map', icon: 'directions_car', href: 'map' }
       ],
       right: null,
       drawer: null
@@ -47,10 +49,10 @@ export default {
   },
   methods: {
     move (item) {
-      if (item.href === 'main') {
-        let container = document.getElementById('app')
-        container.scrollTop = 0
-      }
+      // if (item.href === 'main') {
+      //   let container = document.getElementById('app')
+      //   container.scrollTop = 0
+      // }
     }
   }
 }
