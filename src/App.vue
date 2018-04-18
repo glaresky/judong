@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-navigation-drawer app disable-route-watcher v-model="drawer">
-      <v-toolbar flat height="56">
+      <v-toolbar flat>
         <v-list>
           <v-list-tile>
             <v-list-tile-title class="title">
@@ -22,10 +22,10 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar app height="56">
+    <v-toolbar app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
     </v-toolbar>
-    <v-content>
+    <v-content class="main-content">
       <router-view></router-view>
     </v-content>
     <!-- <v-footer app></v-footer> -->
@@ -63,6 +63,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.main-content {
 }
 </style>
